@@ -7,7 +7,7 @@ import (
 )
 
 func TestPfactor(t *testing.T) {
-	results := []int{}
+	results := []int64{}
 	factor(12, &results)
 	require.Equal(t, []int{2, 2, 3}, results)
 	t.Logf("12 = %v", results)
